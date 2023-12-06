@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUBank Registration</title>
+    <link rel="stylesheet" href="./registr.css">
+</head>
+<body>
+    <main class="main">
+        <div class="reg-form">
+            <div class="warning-div inactive">
+                <h1>You Have To Accept Our T&C To Register</h1>
+                <button class="warning-button">Understood</button>
+            </div>
+            <h1 class="form-logo">Welcome To <span><a href="/menu-logo/index.html">FSBank</a></span></h1>    
+                <input placeholder="First Name" type="text" class="form-inputs form-fname">
+                <input placeholder="Last Name" type="text" class="form-inputs form-sname">
+                <input placeholder="Email" class="form-inputs form-email" type="text">
+                <input placeholder="Password" type="text" class="form-inputs form-password">
+            
+            <div class="checkbox-wrapper">
+                <input type="checkbox" class="input-checkbox">
+                <p class="cehckbox-wrapper_text">Agree to our <a href="#">T&C</a></p>
+            </div>
+            <button class="best-button-open" style="right: 39%; top: 43.5%;" onclick="document.querySelector('.best-modal').showModal()">Bot Check</button>
+                <dialog class="best-modal">
+                    <iframe style="border-radius:12px"></iframe>
+                    <img class="numbers" src="./Знімок екрана 2023-12-06 о 16.16.34.png" alt="">
+                    <input id="textInput" placeholder="Write all the numbers in order from left to right" type="text" class="modal-input">
+                    <button onclick="checkIfBot()" class="bot-submit">Check!</button>
+                    <button class="best-button-close" onclick="document.querySelector('.best-modal').close()">
+                        X
+                    </button>
+                </dialog> 
+                
+            <a href="./form.html" class="log-redirection">Already <span>Registered?</span></a>
+
+            <button class="submit-button">Hop into your new world!</button>
+        </form>
+    </main>
+
+    <script src="./registr.js"></script>
+</body>
+</html>
